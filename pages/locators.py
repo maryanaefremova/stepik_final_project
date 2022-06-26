@@ -12,6 +12,6 @@ class ProductPageLocators():
     BUTTON_BUSKET = (By.CSS_SELECTOR, ".add-to-basket")
     NAME_BOOK = (By.CSS_SELECTOR, ".product_main > h1")
     PRICE_BOOK = (By.CSS_SELECTOR, ".product_main > p.price_color")
-    MESSAGE_NAME_BOOK = (By.CSS_SELECTOR, "#messages > div:nth-child(1)")
+    MESSAGE_NAME_BOOK = (By.CSS_SELECTOR, "#messages > div:nth-child(1) > div > strong")
     MESSAGE_PRICE = (By.CSS_SELECTOR, ".alertinner > p:nth-child(1) > strong")
     # messages > div.alert > .alertinner > p:nth-child(1) > strong
