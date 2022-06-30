@@ -25,8 +25,3 @@ def test_guest_cant_see_product_in_basket_opened_from_main_page(browser):
     page.open()
     page.should_be_empty_basket()
 
-def test_guest_cant_see_product_in_basket_opened_from_product_page(browser):
-    link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207"
-    page = BasketPage(browser, link)
-    page.open()
-    page.should_be_empty_basket()
