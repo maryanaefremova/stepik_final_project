@@ -6,7 +6,7 @@ class ProductPage(BasePage):
     def can_add_product_to_basket(self):
         button = self.browser.find_element(*ProductPageLocators.BUTTON_ADD_TO_BUSKET)
         button.click()
-        self.solve_quiz_and_get_code()
+        #self.solve_quiz_and_get_code()
         book = self.browser.find_element(*ProductPageLocators.NAME_BOOK).text
         message_name = self.browser.find_element(*ProductPageLocators.MESSAGE_NAME_BOOK).text
         assert book == message_name, f"{book} is not {message_name}"
